@@ -1,7 +1,7 @@
 # This docker file contains build environment
 FROM ubuntu:14.04
 MAINTAINER kleymenov.nikita <kleymenov.nikita@apriorit.com>
-RUN apt-get update && apt-get upgrade -y && apt-get install -y curl wget git unzip tar make cmake gcovr && \
+RUN apt-get update && apt-get upgrade -y && apt-get install -y curl wget git unzip tar make cmake gcovr ftp && \
 apt-get install -y  software-properties-common && \
 add-apt-repository ppa:webupd8team/java -y && \
 apt-get update && \
